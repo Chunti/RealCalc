@@ -14,7 +14,14 @@ public class NumStack {
 
     public void getNumStack(){
         for (int i = 0; i < Stack.size(); i++) {
-            System.out.println(Stack.get(i));
+            int counter = 0;
+            float engineerValue = Stack.get(i);
+            while (engineerValue>1000){
+                engineerValue/=1000;
+                counter+=3;
+            }
+            System.out.printf("%.02f", engineerValue);
+            System.out.println(" x10^" + counter);
         }
     }
 
