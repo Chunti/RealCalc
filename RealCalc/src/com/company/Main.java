@@ -32,7 +32,6 @@ public class Main {
                     break;
                 }
             }
-        Runtime.getRuntime().exec("cls");
 
 
         // simpleMath.addXY();
